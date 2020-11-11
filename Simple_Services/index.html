@@ -8,23 +8,42 @@
 </head>
 <body class=body>
     <!-- <img class=rosey src='grownrose.JPG' alt='beautiful rose'> -->
-    <header class= "header">
-        
-        <h1 class= "simple">Simple Services</h1>
-        
-        <form class="form" action="post" method="index.html">
-            <label for="Service">Service</label><br>
-            <input type="text" id="Service" name="user_service"><br>
-            <label for="Date">Date</label><br>
-            <input type="date" id="Date"    name="user_date"><br>
-            <label for="time">Time</label><br>
-            <legend>From</legend>
-            <input type="time"  id="Time"   name="user_time">
-            <legend>Till</legend>
-            <input type="time"  id="Time"   name="user_time">
+    <div class='wrap'>
+        <header class= "main-header">
+            <div class='container'>
+                <h1 class= "simple">Simple Services</h1>
+            </div> 
+            
+            <div class='container'>
+                <form class="form" action="post" method="index.html">
+                    <label for="Service">Service</label><br>
+                    <select id="Service">
+                        <option value="">--Please Choose An Option--</option>
+                        <option value="Yard Work">Yard Work</option>
+                        <option value="Manual Labor">Manual Labor</option>
+                        <option value="Car Services">Car Services</option>
+                        <option value="Mobile Needs">Mobile Needs</option>
+                </select><br>
+                    <!-- <input type="text" id="Service" name="user_service"><br> -->
+                    <label for="Date">Date</label><br>
+                    <input type="date" id="Date"    name="user_date"><br>
+                    <legend>From</legend>
+                    <input type="time"  id="Time"   name="user_time">
+                    <legend>Till</legend>
+                    <input type="time"  id="Time"   name="user_time">
+                    
+                    
 
-        </form>
-        
-    </header>
+                </form>
+
+                <textarea class='comments'>Comments or Details</textarea><br>
+
+                <button class="button" type="button">Submit</button>
+            </div>
+        </header>
+    </div>
+    <footer class='main-footer'>
+        <span>&copy;2020 Simple Services.</span>
+    </footer>
 </body>
 </html>

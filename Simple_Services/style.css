@@ -6,13 +6,35 @@
 
 /* Top */
 
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.main-header {
+
+    margin-top: 5px;
+}
+
+
+
+.main-footer {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2em 0;
+    background: #ffd700;
+    border-radius: 25px;
+}
+
 
 .simple {
     font-size: 50px;
     color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 170px;
-    margin: auto;
+    padding: 25px;
+
+    margin: left auto;
     border-radius: 50px;
 
     background: gold url(grownrose.JPG) no-repeat center / cover;
@@ -22,15 +44,32 @@
 
 .form {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     color: black;
     border-radius: 10px; 
-    padding-left: 1em;
-    padding-right: 1em;
+    padding: 1em;
     background: gold;
-    margin: 5px;
+    margin: 10px;
 }
 
+.button {
+
+    background-color: gold;
+    border: 0;
+    line-height: 2.5em;
+    border-radius: 5px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: auto;
+
+}
+
+
+/* .body {
+
+    background-image: url(fallkentucky.jpg);
+} */
 
 
 /* Media Query */
@@ -40,8 +79,51 @@
         max-width: auto;
         display: flex;
         flex-direction: row;
-        flex-grow: 2;
- }
+        flex-grow: 4;
+        font-size: 2em;
+        margin-top: 25px;
+        padding: .5em;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .wrap {
+       min-height: calc(100vh - 100px); 
+    }
+
+    .simple {
+        font-size: 4em;
+        padding: 50px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .button {
+        margin: auto;
+        padding: 2em;
+        max-width: 100%;
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .button:hover {
+
+        background: red;
+    }
+
+    .comments {
+
+        margin-top: 20px;
+        margin: auto;
+        padding: 2em;
+        max-width: inherit;
+        display: flex;
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+}
 
 
 @media (max-width: 576px) {
