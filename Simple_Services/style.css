@@ -56,12 +56,14 @@
 
     background-color: gold;
     border: 0;
-    line-height: 2.5em;
     border-radius: 5px;
     padding: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
-    max-width: auto;
+    max-width: 70% auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+    
 
 }
 
@@ -100,8 +102,7 @@
     }
 
     .button {
-        margin: auto;
-        padding: 2em;
+        margin: 0 auto;
         max-width: 100%;
         display: flex;
         margin-bottom: 5px;
@@ -114,11 +115,11 @@
 
     .comments {
 
-        margin-top: 20px;
-        margin: auto;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 2em;
         max-width: inherit;
-        display: flex;
         display: flex;
         margin-bottom: 10px;
     }
@@ -126,7 +127,34 @@
 }
 
 
-@media (max-width: 576px) {
+
+
+@media (max-width: 768px) {
+
+    .button {
+
+        display: flex;
+        margin: 20px auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
    
+    .comments {
+
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2em;
+        max-width: inherit;
+        display: flex;
+        margin-bottom: 2px;
+    }
+
+    .simple {
+        font-size: 50px;
+        padding: 50px;
+        margin: auto;
+        text-align: center;
+    }
 }
 
