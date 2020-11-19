@@ -80,7 +80,7 @@
 
 @media (min-width: 769px) {
     .form {
-        max-width: auto;
+        max-width: 100%;
         display: flex;
         flex-direction: row;
         flex-grow: 4;
@@ -97,11 +97,13 @@
     }
 
     .simple {
-        font-size: 4em;
-        padding: 50px;
+        font-size: 56px;
+        padding: 10%;
         margin: auto;
         text-align: center;
     }
+
+    
 
     .button {
         margin: 0 auto;
@@ -147,15 +149,26 @@
         margin-left: auto;
         margin-right: auto;
         padding: 2em;
-        max-width: inherit;
+        max-width: 75%;
         display: flex;
         margin-bottom: 2px;
     }
 
     .simple {
-        font-size: 50px;
-        padding: 50px;
+        font-size: 40px;
+        padding: 25px;
         margin: auto;
+        text-align: center;
+    }
+
+    .dropdown {
+        
+        max-width: 100%;
+    }
+
+    
+    .form {
+
         text-align: center;
     }
 }
